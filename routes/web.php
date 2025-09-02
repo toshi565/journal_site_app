@@ -9,5 +9,7 @@ Route::get('/', function () {
 
 //一覧ページ
 Volt::route('articles', 'articles.index')->name('articles.index');
+// 論文の投稿フォーム表示
+Volt::route('/articles/create', 'articles.create')->name('articles.create');
 //詳細ページ
 Volt::route('articles/{article}', 'articles.show')->name('articles.show');

@@ -6,12 +6,13 @@ use App\Models\Article;
 // ルートモデルバインディング
 state(['article' => fn(Article $article) => $article]);
 
-// 一覧ページに戻るメソッド
+// 一覧ページに戻るメソッド（上のコードをstateだけにしていなくて何回もエラー出て泣いた）
 $index = function () {
     return redirect()->route('articles.index');
 };
 
 ?>
+
 
 <div>
     <p>タイトル:{{ $article->title }}</p>

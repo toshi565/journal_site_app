@@ -19,4 +19,6 @@ $create = function () {
             </a>
         </p>
     @endforeach
+
+    <button wire:click="create">新規論文投稿</button>
 </div>
