@@ -31,17 +31,17 @@ $store = function () {
             <label for="title">論文タイトル</label>
             @error('title')
                 <span class="error">({{ $message }})</spam>
-            @enderror
-            <br>
-            <input type="text" wire:model="title" id="title">
+                @enderror
+                <br>
+                <input type="text" wire:model="title" id="title">
         </p>
         <p>
             <label for="body">本文</label>
             @error('body')
                 <span class="error">({{ $message }})</spam>
-            @enderror
-            <br>
-            <textarea wire:model="body" id="body"></textarea>
+                @enderror
+                <br>
+                <textarea wire:model="body" id="body"></textarea>
         </p>
         <button type="submit">投稿</button>
     </form>
